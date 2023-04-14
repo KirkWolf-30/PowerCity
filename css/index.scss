@@ -3,6 +3,7 @@ $action: #ED1C24;
 $white: #FFFFFF;
 $StokeDark: #374b5a35;
 $StokeLight: #FFFFFF25;
+$footerBg: #262F36;
 
 $Monte: 'Montserrat', sans-serif;
 
@@ -11,6 +12,11 @@ $Monte: 'Montserrat', sans-serif;
     padding: 0;
     box-sizing: border-box;
     font-family: $Monte;
+}
+
+.container{
+    width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 body{
@@ -46,6 +52,11 @@ body::-webkit-scrollbar{
     font-weight: 600;
 }
 
+.contentTitle{
+    font-size: 40px !important;
+    font-weight: 500;
+}
+
 .lessTitle{
     font-size: 24px ;
     font-weight: 600;
@@ -54,8 +65,32 @@ body::-webkit-scrollbar{
 .text{
     font-size: 20px !important;
 }
+.cardBar{
+    border: 2px solid $StokeDark;
+    border-radius: 10px;
+    height: 445px;
+}
 
+.forms{
+    padding-right: 9rem !important;
+}
 
+input,textarea{
+    background: none !important;
+}
+
+label{
+    font-size: 12px !important;
+}
+
+footer{
+    background-color:$footerBg;
+    color: $white;
+
+    .footerlogo svg{
+        stroke: $white !important;
+    }
+}
 
 .HomeLight{
     background: url(/Images/BG.svg);
@@ -100,11 +135,7 @@ body::-webkit-scrollbar{
         stroke: $Primary !important;
     }
 
-    .cardBar{
-        border: 2px solid $StokeDark;
-        border-radius: 10px;
-        height: 445px;
-    }
+
     
     .icon svg{
         stroke: $Primary !important;
@@ -141,11 +172,6 @@ body::-webkit-scrollbar{
     .logo svg{
         stroke: $white !important;
     }
-    .cardBar{
-        border: 2px solid $StokeLight;
-        border-radius: 10px;
-        height: 445px;
-    }
     
     .icon svg{
         stroke: $StokeLight !important;
@@ -153,6 +179,10 @@ body::-webkit-scrollbar{
         path{
             fill: $action
         }
+    }
+
+    input,textarea{
+        color: $white !important;
     }
 }
 
@@ -207,6 +237,47 @@ transform: translate(0 , -50%);
     cursor: pointer;
 }
 
-// #About{
-//     background: none;
-// }
+
+//Mobile
+
+@media screen and (max-width: 480px) {
+ 
+.heroTitle{
+    font-size: 40px !important;
+}
+
+.miniTitle{
+    font-size: 32px !important;
+    font-weight: 600;
+}
+
+.contentTitle{
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+.lessTitle{
+    font-size: 18px ;
+    font-weight: 600;
+}
+
+.text{
+    font-size: 12px !important;
+}
+
+label{
+    font-size: 10px !important;
+}
+
+.cardBar{
+    border: 2px solid $StokeDark;
+    border-radius: 10px;
+    height: initial;
+    width: initial;
+}
+
+.forms{
+    padding-right: 0 !important;
+}
+
+  }

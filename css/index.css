@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 body {
   position: relative;
 }
@@ -38,6 +43,11 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 
+.contentTitle {
+  font-size: 40px !important;
+  font-weight: 500;
+}
+
 .lessTitle {
   font-size: 24px;
   font-weight: 600;
@@ -45,6 +55,32 @@ body::-webkit-scrollbar {
 
 .text {
   font-size: 20px !important;
+}
+
+.cardBar {
+  border: 2px solid rgba(55, 75, 90, 0.2078431373);
+  border-radius: 10px;
+  height: 445px;
+}
+
+.forms {
+  padding-right: 9rem !important;
+}
+
+input, textarea {
+  background: none !important;
+}
+
+label {
+  font-size: 12px !important;
+}
+
+footer {
+  background-color: #262F36;
+  color: #FFFFFF;
+}
+footer .footerlogo svg {
+  stroke: #FFFFFF !important;
 }
 
 .HomeLight {
@@ -86,11 +122,6 @@ body::-webkit-scrollbar {
 .light .logo svg {
   stroke: #374B5A !important;
 }
-.light .cardBar {
-  border: 2px solid rgba(55, 75, 90, 0.2078431373);
-  border-radius: 10px;
-  height: 445px;
-}
 .light .icon svg {
   stroke: #374B5A !important;
 }
@@ -123,16 +154,14 @@ body::-webkit-scrollbar {
 .Dark .logo svg {
   stroke: #FFFFFF !important;
 }
-.Dark .cardBar {
-  border: 2px solid rgba(255, 255, 255, 0.1450980392);
-  border-radius: 10px;
-  height: 445px;
-}
 .Dark .icon svg {
   stroke: rgba(255, 255, 255, 0.1450980392) !important;
 }
 .Dark .icon svg path {
   fill: #ED1C24;
+}
+.Dark input, .Dark textarea {
+  color: #FFFFFF !important;
 }
 
 .togglebtn {
@@ -176,4 +205,37 @@ body::-webkit-scrollbar {
   background-position: center;
   background-size: 70%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .heroTitle {
+    font-size: 40px !important;
+  }
+  .miniTitle {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
+  .contentTitle {
+    font-size: 20px !important;
+    font-weight: 500;
+  }
+  .lessTitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .text {
+    font-size: 12px !important;
+  }
+  label {
+    font-size: 10px !important;
+  }
+  .cardBar {
+    border: 2px solid rgba(55, 75, 90, 0.2078431373);
+    border-radius: 10px;
+    height: initial;
+    width: initial;
+  }
+  .forms {
+    padding-right: 0 !important;
+  }
 }/*# sourceMappingURL=index.css.map */
